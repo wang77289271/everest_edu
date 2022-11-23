@@ -1,0 +1,28 @@
+.button-rectangle a,
+.button-round a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: var(--font-opensans);
+  border: 3px solid var(--text-maroon);
+
+  background-color: var(--text-maroon);
+  color: var(--text-white);
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.button-rectangle a {
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+.button-round a {
+  border-radius: 50px;
+  padding: 8px 22px;
+}
+.button-rectangle a:hover,
+.button-round a:hover {
+  color: var(--text-maroon);
+  background-color: var(--text-white);
+}

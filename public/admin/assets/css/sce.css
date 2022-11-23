@@ -1,0 +1,165 @@
+.sceAdmin_form_detail {
+    width: 50%;
+    padding-top: 30px;
+    margin: auto;
+}
+.sceAdmin_form_detail h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.sceAdmin_form_detail h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.sceAdmin_form_detail h3 span {
+    font-style: italic;
+    letter-spacing: 0.5px;
+    color: #00a0df;
+}
+.sceAdmin_form_detail form .sceAdmin_form_detail_btn button {
+    padding: 8px 25px;
+    color: white;
+    background-color: #00d25b;
+    font-size: 18px;
+}
+.sceAdmin_form_detail form .sceAdmin_form_detail_btn button:hover {
+    background-color: #008238;
+}
+.sceAdmin_form_detail form .sceAdmin_form_detail_btn a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    background-color: #d24300;
+    font-size: 18px;
+}
+.sceAdmin_form_detail form .sceAdmin_form_detail_btn a:hover {
+    background-color: #7e2800;
+}
+.sceAdmin_form_detail__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.sceAdmin_form_detail__box label {
+    flex: 1;
+}
+.sceAdmin_form_detail__box input,
+.sceAdmin_form_detail__box textarea,
+.sceAdmin_form_detail__box a,
+.sceAdmin_form_detail__box p {
+    flex: 1;
+}
+.sceAdmin_form_detail__box select {
+    flex: 1;
+    color: #000;
+    margin: 0;
+}
+.sceAdmin_form_detail__box select option {
+    color: #000;
+}
+.sceAdmin_form_detail__box input,
+.sceAdmin_form_detail__box textarea {
+    color: #000;
+}
+.sceAdmin_form_detail__box input[type="file"] {
+    color: #fff;
+}
+.sceAdmin_form_detail__box input::placeholder,
+.sceAdmin_form_detail__box textarea::placeholder {
+    color: #ababab;
+}
+.sceAdmin_form_detail__box input[name="updated_at"] {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+.sceAdmin_form_detail__box a {
+    color: #00a0df;
+}
+.sceAdmin_form_detail__box a:hover {
+    color: #02729e;
+}
+.sceAdmin_form__margin_top {
+    margin-top: 20px;
+}
+.sceAdmin_form__margin_bottom {
+    margin-bottom: 20px;
+}
+.sce_back_tag a {
+    padding: 7px 21px;
+    background-color: rgb(26, 129, 201);
+    border-radius: 3px;
+    font-weight: bold;
+    border: 2px solid rgb(26, 129, 201);
+    transition: all 0.2s;
+}
+.sce_back_tag a:hover {
+    background-color: transparent;
+    color: rgb(26, 129, 201);
+}
+.show_sce__pagination {
+    width: 80%;
+    margin-top: 20px;
+}
+.show_sce__pagination p {
+    color: rgb(155, 155, 155);
+}
+.show_sce__pagination nav div:nth-child(2) div:nth-child(2) a {
+    background-color: transparent !important;
+    color: rgb(155, 155, 155);
+}
+.show_sce__pagination nav div:nth-child(2) div:nth-child(2) span {
+    background-color: transparent !important;
+}
+.relative.inline-flex.items-center.px-4.py-2.-ml-px.text-sm.font-medium.text-gray-500.bg-white.border.border-gray-300.cursor-default.leading-5 {
+    color: #fff;
+}
+
+/* view_single_sce */
+.view_single_sce {
+    width: 100%;
+    margin-top: 20px;
+    color: #000;
+    background-color: rgb(255, 255, 255, 0.9);
+    border-radius: 6px;
+    box-shadow: 0 0 20px #fff;
+}
+.view_single_sce_wrapper {
+    padding: 0 20px;
+}
+.view_single_sce hr {
+    /* width: 500px; */
+    margin-bottom: 7px;
+}
+.view_single_sce h2 {
+    font-size: 25px;
+    padding: 20px 0;
+}
+.view_single_sce .view_single_sce__item {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.view_single_sce .view_single_sce__item h1 {
+    flex: 1;
+    font-size: 18px;
+    color: #363636;
+}
+.view_single_sce .view_single_sce__item p,
+.view_single_sce .view_single_sce__item a {
+    flex: 3;
+    font-size: 18px;
+}
+.view_single_sce .view_single_sce__item a {
+    color: #00a0df;
+}
+.view_single_sce .view_single_sce__item a:hover {
+    color: #02729e;
+}
+.view_single_sce__btn {
+    margin: 20px;
+    padding-bottom: 30px;
+}

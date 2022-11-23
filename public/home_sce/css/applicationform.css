@@ -1,0 +1,160 @@
+.sce_application {
+    width: 100%;
+    padding: 50px 0;
+    background-color: var(--bg-grey);
+}
+.sce_application_wrapper {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sce_application_wrapper h1 {
+    font-size: 38px;
+}
+.sce_application_wrapper p {
+    margin-bottom: 30px;
+}
+.sce_form {
+    width: 600px;
+    padding: 20px;
+    box-shadow: 0 0 15px var(--bg-box-shadow), 0 0 10px var(--bg-box-shadow),
+        0 0 20px var(--bg-box-shadow);
+    /* border: 1px solid var(--text-everest); */
+    background-color: var(--text-white);
+}
+@media only screen and (max-width: 700px) {
+    .sce_form {
+        width: 450px;
+    }
+}
+.sce_form form {
+    width: 100%;
+}
+.sce_form form hr {
+    width: 100%;
+    margin: auto;
+    border: none;
+    height: 1.5px;
+    margin: 30px 0;
+    background-color: var(--text-everest);
+}
+.sce_form__content h1 {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text-secondary-color);
+    margin-bottom: 20px;
+}
+.sce_form form .sce_application_cell {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.sce_application_cell label {
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-primary-color);
+    margin-top: 5px;
+    letter-spacing: 0.2px;
+}
+.sce_application_cell label span {
+    font-size: 12px;
+    color: red;
+}
+.sce_application_cell input {
+    padding: 10px 5px;
+    font-size: 15px;
+    border: 1.5px solid #ccc;
+    outline: none;
+    border-radius: 2px;
+}
+.sce_application_cell input::placeholder {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: var(--text-input-placeholder);
+}
+.sce_application_cell input:focus {
+    border-color: var(--text-everest);
+}
+.sce_application_cell select {
+    padding: 10px 5px;
+    font-size: 15px;
+    border: 1.5px solid #ccc;
+    outline: none;
+    border-radius: 2px;
+}
+.sce_application_cell select[value=""] {
+    color: red;
+}
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+.flex_row__left {
+    flex: 1;
+    margin-right: 2px;
+}
+.flex_row__left select {
+    width: 100%;
+}
+.flex_row__right {
+    flex: 4;
+}
+.flex_row__right input {
+    width: 100%;
+}
+.sce_sceForm-btn {
+    width: 100%;
+    margin-top: 50px;
+}
+.sce_sceForm-btn button {
+    width: 100%;
+    padding: 10px 0;
+    border: 2px solid var(--text-everest);
+    background-color: var(--text-everest);
+    color: var(--text-white);
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+.sce_sceForm-btn button:hover {
+    background-color: transparent;
+    color: var(--text-everest);
+}
+
+.sce_confirm span {
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+}
+.sce_application h2 {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    margin-top: 10px;
+}
+.sce_application h2 span {
+    font-size: 15px;
+    color: red;
+    padding-left: 0;
+    padding-right: 5px;
+}
+.exam_score {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+.exam_score span {
+    color: red;
+}
