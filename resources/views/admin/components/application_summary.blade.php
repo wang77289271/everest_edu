@@ -5,7 +5,7 @@
                 <div class="row">
                 <div class="col-9">
                     <div class="d-flex align-items-center align-self-start">
-                    <h3 class="mb-0">{{count($sce_applications)}}</h3>
+                    <h3 class="mb-0">{{$amount_sce_applications}}</h3>
                     </div>
                 </div>
                 <div class="col-3">
@@ -43,7 +43,7 @@
                 <div class="row">
                 <div class="col-9">
                     <div class="d-flex align-items-center align-self-start">
-                    <h3 class="mb-0">{{count($sce_applications)}}</h3>
+                    <h3 class="mb-0">{{$amount_sce_applications}}</h3>
                     </div>
                 </div>
                 <div class="col-3">
@@ -62,7 +62,7 @@
                 <div class="row">
                 <div class="col-9">
                     <div class="d-flex align-items-center align-self-start">
-                    <h3 class="mb-0">30</h3>
+                    <h3 class="mb-0">{{$amount_sce_contact_us}}</h3>
                     </div>
                 </div>
                 <div class="col-3">

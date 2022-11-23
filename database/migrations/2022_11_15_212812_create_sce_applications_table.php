@@ -15,8 +15,6 @@ return new class extends Migration
     {
         Schema::create('sce_applications', function (Blueprint $table) {
             $table->integer('id', true);
-            // $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            // $table->integer('user_id')->nullable();
             $table->string('fname')->nullable();
             $table->string('mname')->nullable();
             $table->string('lname')->nullable();

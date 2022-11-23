@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Sce_contact_us_form;
 use App\Models\SceApplications;
 use App\Models\User;
 use App\Notifications\SendEmailForSceApplication;
@@ -16,6 +17,14 @@ class SceFormController extends Controller
 {
     // Contact us form
     public function send_email_contact_us(Request $request){
+        $sce_contact_us = new Sce_contact_us_form();
+        $sce_contact_us->fname=$request->fname;
+        $sce_contact_us->lname=$request->lname;
+        $sce_contact_us->email=$request->email;
+        $sce_contact_us->phone=$request->phone;
+        $sce_contact_us->message=$request->message;
+        $sce_contact_us->save();
+        // send email notification
         $email = User::find('3');
         $details = [
             'fname' =>$request->fname,
@@ -26,6 +35,7 @@ class SceFormController extends Controller
         ];
 
         Notification::send($email,new SendEmailFromSceContactUs($details));
+        // end send email notification
 
         return redirect()->back()->with('message', 'Thank you for contacting us! We will get back to you as soon as possible!');
     }

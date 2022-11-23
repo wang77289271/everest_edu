@@ -51,7 +51,7 @@
         <span class="nav-link">Navigation</span>
         </li>
         <li class="nav-item menu-items">
-        <a class="nav-link" href="{{url('/redirect')}}">
+        <a class="nav-link" href="{{url('/user_dashboard')}}">
             <span class="menu-icon">
             <i class="mdi mdi-speedometer"></i>
             </span>
@@ -94,6 +94,21 @@
                 <li class="nav-item"> <a class="nav-link" href="#">Sce website</a></li>
               </ul>
             </div>
-          </li>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" data-bs-toggle="collapse" href="#contactusSubmission" aria-expanded="false" aria-controls="contactusSubmission">
+              <span class="menu-icon">
+                <i class="mdi mdi-comment-multiple-outline"></i>
+              </span>
+              <span class="menu-title">Contact Us Forms</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="contactusSubmission">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="#">All</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('/sce_contact_forms')}}">Sce website</a></li>
+              </ul>
+            </div>
+        </li>
     </ul>
 </nav>

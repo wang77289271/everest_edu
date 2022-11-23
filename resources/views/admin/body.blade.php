@@ -132,6 +132,7 @@
       </div> --}}
       @include('admin.components.webstatus_google')
       @include('admin.components.user')
+      @include('admin.components.contactforms')
       
       {{-- <div class="row">
         <div class="col-md-6 col-xl-4 grid-margin stretch-card">

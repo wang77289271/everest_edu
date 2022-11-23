@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Sce_contact_us_form;
 use Illuminate\Http\Request;
 use App\Models\SceApplications;
 use App\Models\User;
@@ -171,6 +172,15 @@ class AdminController extends Controller
         Notification::send($user,new SendEmailToUser($details));
 
         return redirect()->back()->with('message', 'Message sent successfully!');
+      }
+      else{
+        return redirect()->to('/login');
+      }
+    }
+    public function sce_contact_forms(){
+      if (Auth::id() && Auth::user()->usertype=='1') {
+        $sce_contact_forms = Sce_contact_us_form::orderBy('created_at', 'desc')->get();
+        return view('admin.sce_contact_form', compact('sce_contact_forms'));
       }
       else{
         return redirect()->to('/login');

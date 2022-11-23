@@ -57,3 +57,5 @@ Route::get('/delete_sce_application/{id}',[AdminController::class, 'delete_sce_a
 Route::get('/single_sce_application/{id}',[AdminController::class, 'single_sce_application']);
 Route::get('/view_single_sce_application/{id}',[AdminController::class, 'view_single_sce_application']);
 Route::post('/update_sce_application/{id}',[AdminController::class, 'update_sce_application']);
+// Admin - Sce contact us forom
+Route::get('/sce_contact_forms',[AdminController::class, 'sce_contact_forms']);
