@@ -48,29 +48,30 @@
         </div>
         </li>
         <li class="nav-item nav-category">
-        <span class="nav-link">Navigation</span>
+            <span class="nav-link">Navigation</span>
         </li>
         <li class="nav-item menu-items">
-        <a class="nav-link" href="{{url('/user_dashboard')}}">
-            <span class="menu-icon">
-            <i class="mdi mdi-speedometer"></i>
-            </span>
-            <span class="menu-title">Dashboard</span>
-        </a>
+            <a class="nav-link" href="{{url('/user_dashboard')}}">
+                <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title">Dashboard</span>
+            </a>
         </li>
         <li class="nav-item menu-items">
-        <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-            <span class="menu-icon">
-            <i class="mdi mdi-application"></i>
-            </span>
-            <span class="menu-title">Sce Applications</span>
-            <i class="menu-arrow"></i>
-        </a>
-        <div class="collapse" id="auth">
-            <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="{{url('/show_sce_applications')}}">Show</a></li>
-            <li class="nav-item"> <a class="nav-link" href="{{url('/view_sce_applications')}}">Create</a></li>
-        </div>
+            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                <span class="menu-icon">
+                <i class="mdi mdi-application"></i>
+                </span>
+                <span class="menu-title">Sce Applications</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{url('/show_sce_applications')}}">Show</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('/view_sce_applications')}}">Create</a></li>
+                </ul>
+            </div>
         </li>
         <li class="nav-item menu-items">
             <a class="nav-link" href="{{url('/admin_get_user')}}">
